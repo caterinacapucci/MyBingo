@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/darkGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Ciao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--<androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_createGame"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/create_game"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_joinGame"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="@dimen/padding_btn"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/join_game"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_createGame" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_singleGame"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="@dimen/padding_btn"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/single_game"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_joinGame" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ranking"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="@dimen/padding_btn"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/ranking"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_singleGame" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_rules"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="@dimen/padding_btn"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/rules"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ranking" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_exit"
+        android:layout_width="214dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="@dimen/padding_btn"
+        android:background="@drawable/ic_btn_custumize"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rules" /> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
