@@ -6,7 +6,8 @@
     <string name="create_game">CREA UNA PARTITA</string>
     <string name="join_game">ENTRA IN UNA PARTITA</string>
     <string name="single_game">GIOCA SINGOLARMENTE</string>
-    <string name="ranking">PUNTEGGIO</string>
-    <string name="rules">RULES</string>
-    <string name="exit">EXIT</string>
+    <string name="game">Benvenuto nel gioco</string>
+    <string name="ranking_game">PUNTEGGIO</string>
+    <string name="rules_game">RULES</string>
+    <string name="exit_game">LOGOUT</string>
 </resources>

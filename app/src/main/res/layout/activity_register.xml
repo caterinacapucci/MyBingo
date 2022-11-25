@@ -92,7 +92,7 @@
         android:layout_width="214dp"
         android:layout_height="53dp"
         android:layout_marginTop="64dp"
-        android:background="@drawable/ic_btn_custumize"
+        android:background="@drawable/ic_btn_customize"
         android:text="@string/register_name"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
