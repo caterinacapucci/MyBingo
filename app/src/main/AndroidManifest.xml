@@ -35,12 +35,17 @@
         </activity>
         <activity
             android:name=".activities.RegisterActivity"
+            android:label="Registrazione"
+            android:parentActivityName=".activities.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".activities.LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".activities.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".activities.HomeActivity"
+            android:label="Home page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
