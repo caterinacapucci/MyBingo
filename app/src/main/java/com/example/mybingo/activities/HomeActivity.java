@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.example.mybingo.R;
+
 public class HomeActivity extends AppCompatActivity {
 
     AppCompatButton loginBtn, hostBtn;

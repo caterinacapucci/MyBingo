@@ -10,4 +10,6 @@
     <string name="ranking_game">PUNTEGGIO</string>
     <string name="rules_game">RULES</string>
     <string name="exit_game">LOGOUT</string>
+    <string name="init_game">INIZIA IL GIOCO</string>
+    <string name="create_game_text">Seleziona le caratteristiche della partita</string>
 </resources>
