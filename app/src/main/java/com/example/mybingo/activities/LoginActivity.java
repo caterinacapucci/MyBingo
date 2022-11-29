@@ -40,21 +40,21 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 getActionBar().setDisplayHomeAsUpEnabled(true);
 
-                if(TextUtils.isEmpty(username.getText())){
-                    /*AlertDialog.Builder miaAlert = new AlertDialog.Builder(this);
-                    miaAlert.setTitle("Attenzione!");
-                    miaAlert.setMessage("Inserisci l'username per accedere");
-                    AlertDialog alert = miaAlert.create();
-                    alert.show();*/
-                    //Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT ).show();
-                } else if(TextUtils.isEmpty(password.getText())){
-                    Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT ).show();
-                } else if (TextUtils.isEmpty(username.getText()) && TextUtils.isEmpty(password.getText())){
-                    Toast.makeText(getApplicationContext(), "Inserisci le credenziali", Toast.LENGTH_SHORT ).show();
-                } else {
+//                if(TextUtils.isEmpty(username.getText())){
+//                    AlertDialog.Builder miaAlert = new AlertDialog.Builder(this);
+//                    miaAlert.setTitle("Attenzione!");
+//                    miaAlert.setMessage("Inserisci l'username per accedere");
+//                    AlertDialog alert = miaAlert.create();
+//                    alert.show();
+//                    Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT ).show();
+//                } else if(TextUtils.isEmpty(password.getText())){
+//                    Toast.makeText(getApplicationContext(), "Inserisci la password", Toast.LENGTH_SHORT ).show();
+//                } else if (TextUtils.isEmpty(username.getText()) && TextUtils.isEmpty(password.getText())){
+//                    Toast.makeText(getApplicationContext(), "Inserisci le credenziali", Toast.LENGTH_SHORT ).show();
+//                } else {
                     Intent intentLogin = new Intent(LoginActivity.this, GameActivity.class);
                     startActivity(intentLogin);
-                }
+//                }
             }
         });
         registerBtn.setOnClickListener(new View.OnClickListener() {
