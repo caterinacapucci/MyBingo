@@ -22,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                getActionBar().setDisplayHomeAsUpEnabled(true);
                 Intent intentRegister = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intentRegister);
                 getActionBar().setDisplayHomeAsUpEnabled(true);

@@ -34,8 +34,6 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.btn_login);
 
 
-
-
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -54,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 //                } else {
                     Intent intentLogin = new Intent(LoginActivity.this, GameActivity.class);
                     startActivity(intentLogin);
+
 //                }
             }
         });
@@ -61,8 +60,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intentRegister);
-                getActionBar().setDisplayHomeAsUpEnabled(true);
-
             }
         });
 

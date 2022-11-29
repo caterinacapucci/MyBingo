@@ -23,9 +23,11 @@ public class GameActivity extends AppCompatActivity {
 
         createGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                getActionBar().setDisplayHomeAsUpEnabled(true);
+
                 Intent intentLogin = new Intent(GameActivity.this, CreateGameActivity.class);
                 startActivity(intentLogin);
-                finish();
+
             }
         });
     }
