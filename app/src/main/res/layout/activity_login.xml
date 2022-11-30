@@ -10,10 +10,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="Inserisci le tue credenziali:"
+        android:textAlignment="center"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +34,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -44,7 +46,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/ic_round_border"
-        android:hint="Paasword"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingLeft="10dp"
         android:paddingTop="0dp"
@@ -55,44 +58,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
-    <TextView
-        android:id="@+id/forget_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Password dimenticata?"
-        app:layout_constraintEnd_toEndOf="@id/password"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password" />
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="214dp"
         android:layout_height="53dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/ic_btn_customize"
         android:text="@string/login_name"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forget_password" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <TextView
-        android:id="@+id/tv_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:background="@color/lightGray"
         android:text="Registrati"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="@dimen/size_text_default"
-        android:linksClickable="true"
-        android:textColorLink="@color/btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.146" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

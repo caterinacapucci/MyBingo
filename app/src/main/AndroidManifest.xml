@@ -30,8 +30,7 @@
         <activity
             android:name=".activities.GameActivity"
             android:label="Game"
-            android:parentActivityName=".activities.HomeActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -40,7 +39,11 @@
             android:name=".activities.RegisterActivity"
             android:label="Registrazione"
             android:parentActivityName=".activities.HomeActivity"
-            android:exported="false" />
+            android:exported="false" >
+            <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+       </activity>
         <activity
             android:name=".activities.LoginActivity"
             android:label="Login"

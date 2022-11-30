@@ -1,14 +1,14 @@
 package com.example.mybingo.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.mybingo.R;
 
@@ -22,6 +22,13 @@ public class CreateGameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
+        try {
+            this.getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+        // catch block to handle NullPointerException
+        catch (NullPointerException e) {
+        }
+
 
         rgPlayer = findViewById(R.id.rgb_num_player);
         rgCard = findViewById(R.id.rgb_num_card);
@@ -30,7 +37,6 @@ public class CreateGameActivity extends AppCompatActivity {
 
         startGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                getActionBar().setDisplayHomeAsUpEnabled(true);
 
                 Intent intentLogin = new Intent(CreateGameActivity.this, StartGameActivity.class);
                 startActivity(intentLogin);

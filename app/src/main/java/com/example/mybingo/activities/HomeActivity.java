@@ -1,9 +1,12 @@
 package com.example.mybingo.activities;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
 import com.example.mybingo.R;
 
 public class HomeActivity extends AppCompatActivity {
@@ -19,8 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intentHome = new Intent(HomeActivity.this, LoginActivity.class);
-                startActivity(intentHome);
+                PageLogin();
             }
         });
 
@@ -28,12 +30,20 @@ public class HomeActivity extends AppCompatActivity {
 
 
             public void onClick(View v) {
-
-
-                Intent intentHost = new Intent(HomeActivity.this,GameActivity.class);
-                startActivity(intentHost);
+                HostLogin();
             }
         });
     }
 
+    //metodo per andare al login
+    public void PageLogin(){
+        Intent intentHome = new Intent(this, LoginActivity.class);
+        startActivity(intentHome);
+    }
+
+    //metodo per accedere da host
+    public void HostLogin() {
+        Intent intentHost = new Intent(this,GameActivity.class);
+        startActivity(intentHost);
+    }
 }

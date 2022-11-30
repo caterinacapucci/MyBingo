@@ -8,11 +8,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
         android:layout_marginTop="104dp"
         android:text="@string/game"
         android:textColor="@color/darkGray"
+        android:textAlignment="center"
         android:textSize="@dimen/size_text_default"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +22,19 @@
     <!-- BUTTON CREATE GAME -->
 
     <!-- BUTTON JOIN GAME -->
+
+    <!-- BUTTON SINGLE GAME -->
+
+    <!-- BUTTON RANKING GAME -->
+
+    <!-- BUTTON RULES GAME -->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_createGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/button_margin"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="@dimen/button_margin"
         android:background="@drawable/ic_btn_customize"
         android:text="@string/create_game"
@@ -40,62 +48,48 @@
         android:id="@+id/btn_joinGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/button_margin"
         android:background="@drawable/ic_btn_customize"
         android:text="@string/join_game"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_createGame" />
 
-    <!-- BUTTON SINGLE GAME -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_singleGame"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_margin"
-        android:layout_marginStart="@dimen/button_margin"
-        android:layout_marginEnd="@dimen/button_margin"
-        android:background="@drawable/ic_btn_customize"
-        android:text="@string/single_game"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_joinGame" />
-
-    <!-- BUTTON RANKING GAME -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_rankingGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/button_margin"
         android:background="@drawable/ic_btn_customize"
         android:text="@string/ranking_game"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_singleGame" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_joinGame" />
 
-    <!-- BUTTON RULES GAME -->
+    <!-- BUTTON LOGOUT GAME -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_rulesGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_margin"
         android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/button_margin"
         android:background="@drawable/ic_btn_customize"
         android:text="@string/rules_game"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_rankingGame" />
 
-    <!-- BUTTON LOGOUT GAME -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_LOGOUTGame"
         android:layout_width="0dp"
@@ -108,8 +102,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_rulesGame" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_rulesGame"
+        app:layout_constraintVertical_bias="0.401" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

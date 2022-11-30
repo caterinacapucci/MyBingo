@@ -12,4 +12,7 @@
     <string name="exit_game">LOGOUT</string>
     <string name="init_game">INIZIA IL GIOCO</string>
     <string name="create_game_text">Seleziona le caratteristiche della partita</string>
+    <string name="err_richiesto">Inserisci Valore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="rules">REGOLE DEL GIOCO</string>
 </resources>
