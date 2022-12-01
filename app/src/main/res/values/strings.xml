@@ -15,4 +15,9 @@
     <string name="err_richiesto">Inserisci Valore</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="rules">REGOLE DEL GIOCO</string>
+    <string name="str_rules">Ogni qualvolta che esce un numero presente nella vostra cartella, compilare la casella contenente questo numero. </string>
+    <string name="str_rues2">Qualora sulla stessa riga tu abbia coperto 3 o 5 numeri, puoi dichiarare di aver fatto a sua volta terno o cinquina. </string>
+    <string name="str_rules3">Nel caso in cui tu abbia coperto tutti i numeri su due righe, devi dichiarare di aver fatto decina.
+
+    Invece, se sono stati coperti tutti i numeri presenti nella cartella (o tabella), hai vinto la partita facendo BINGO</string>
 </resources>

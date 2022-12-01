@@ -85,6 +85,7 @@
         android:background="@drawable/ic_btn_customize"
         android:text="@string/rules_game"
         android:textColor="@color/white"
+        android:onClick="showPopupRules"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

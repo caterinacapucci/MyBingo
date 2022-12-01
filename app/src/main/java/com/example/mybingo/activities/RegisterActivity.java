@@ -13,8 +13,8 @@ import com.example.mybingo.R;
 public class RegisterActivity extends AppCompatActivity {
 
     private AppCompatButton registerBtn;
-    public EditText usernameTxt;
-    public EditText passwordTxt;
+    private EditText usernameTxt, passwordTxt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +30,25 @@ public class RegisterActivity extends AppCompatActivity {
         usernameTxt = findViewById(R.id.username);
         passwordTxt = findViewById(R.id.password);
         registerBtn = findViewById(R.id.signUp_btn);
+
         registerBtn.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
+
                 if (usernameTxt.getText().toString().trim().isEmpty()) {
                     usernameTxt.setError(getText(R.string.err_richiesto));
                     usernameTxt.requestFocus();
+
                 } else if (passwordTxt.getText().toString().trim().isEmpty()) {
                     passwordTxt.setError(getText(R.string.err_richiesto));
                     passwordTxt.requestFocus();
+
                 } else if (usernameTxt.getText().toString().trim().isEmpty() && passwordTxt.getText().toString().trim().isEmpty()) {
                     usernameTxt.setError(getText(R.string.err_richiesto));
                     passwordTxt.setError(getText(R.string.err_richiesto));
                     usernameTxt.requestFocus();
                     passwordTxt.requestFocus();
+
                 } else {
                     registerPage();
                     finish();
@@ -52,7 +58,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-
     public void registerPage() {
         Intent toRegister = new Intent(this, LoginActivity.class);
         startActivity(toRegister);
