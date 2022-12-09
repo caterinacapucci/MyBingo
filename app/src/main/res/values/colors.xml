@@ -9,6 +9,7 @@
     <color name="black">#FF000000</color>
 
     <!-- My colors -->
+    <color name="bar_color">#4F86B3</color>
     <color name="btn">#237A7A</color>
     <color name="darkGray">#202122</color>
     <color name="lightGray">#989CA0</color>

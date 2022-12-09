@@ -8,10 +8,12 @@ public class LoginModel {
 
 
     public String getUsername(){
+
         return username;
     }
 
     public String getPassword(){
+
         return password;
     }
 }

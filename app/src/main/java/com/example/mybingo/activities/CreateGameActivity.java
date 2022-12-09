@@ -11,12 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.mybingo.R;
+import com.example.mybingo.models.CreateGameModel;
 
 public class CreateGameActivity extends AppCompatActivity {
 
     private AppCompatButton startGameBtn;
     private RadioGroup rgPlayer;
     private RadioGroup rgCard;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,6 @@ public class CreateGameActivity extends AppCompatActivity {
 
                 Intent intentLogin = new Intent(CreateGameActivity.this, StartGameActivity.class);
                 startActivity(intentLogin);
-
             }
         });
 

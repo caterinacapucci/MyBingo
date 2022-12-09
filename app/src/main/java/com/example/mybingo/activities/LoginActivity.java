@@ -37,21 +37,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
-
-                if (usernameTxt.getText().toString().trim().isEmpty()) {
-                    usernameTxt.setError(getText(R.string.err_richiesto));
-                    usernameTxt.requestFocus();
-
-                } else if (passwordTxt.getText().toString().trim().isEmpty()) {
-                    passwordTxt.setError(getText(R.string.err_richiesto));
-                    passwordTxt.requestFocus();
-
-                } else {
-                    loginPage();
-                    finish();
-                }
+                loginPage();
             }
 
         });

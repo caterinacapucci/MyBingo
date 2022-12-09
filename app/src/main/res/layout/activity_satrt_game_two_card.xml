@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_img2"
-    tools:context=".activities.StartGameActivity">
-
+    tools:context=".activities.SatrtGameTwoCardActivity">
 
     <LinearLayout
         android:id="@+id/textView3"
@@ -22,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_username"
+            android:id="@+id/textView7"
             android:layout_width="207dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,7 +41,7 @@
             android:src="@drawable/round_border_button"
             android:text="Esci"
             android:textColor="@color/white"
-            />
+           />
 
     </LinearLayout>
 
@@ -137,7 +136,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="ULTIMI NUMERI USCITI"
         android:textColor="#FFFF"
         android:textSize="@dimen/size_text_default"
@@ -149,14 +148,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="378dp"
-        android:layout_height="377dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@color/darkGreen"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_ultimi_usciti">
@@ -170,7 +168,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_background_dark_blue"
                 android:backgroundTint="#FF9800"
@@ -183,7 +181,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_background_dark_blue"
                 android:backgroundTint="#CDDC39"
@@ -196,7 +194,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_background_dark_blue"
                 android:backgroundTint="#108315"
@@ -209,7 +207,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_background_dark_blue"
                 android:backgroundTint="#3F51B5"
@@ -222,7 +220,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_background_dark_blue"
                 android:backgroundTint="#7E0F91"
@@ -411,8 +409,98 @@
                 android:src="@drawable/round_border_button" />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:background="@color/darkGreen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
         <LinearLayout
-            android:id="@+id/line_4"
+            android:id="@+id/line_00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_dark_blue"
+                android:backgroundTint="#FF9800"
+                android:gravity="center"
+                android:src="@drawable/round_border_button"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_dark_blue"
+                android:backgroundTint="#CDDC39"
+                android:gravity="center"
+                android:src="@drawable/round_border_button"
+                android:text="I"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_dark_blue"
+                android:backgroundTint="#108315"
+                android:gravity="center"
+                android:src="@drawable/round_border_button"
+                android:text="N"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_dark_blue"
+                android:backgroundTint="#3F51B5"
+                android:gravity="center"
+                android:src="@drawable/round_border_button"
+                android:text="G"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_dark_blue"
+                android:backgroundTint="#7E0F91"
+                android:gravity="center"
+                android:src="@drawable/round_border_button"
+                android:text="O"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -467,10 +555,11 @@
                 android:background="@drawable/round_background_dark_blue"
                 android:padding="5dp"
                 android:src="@drawable/round_border_button" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/line_5"
+            android:id="@+id/line_22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -518,6 +607,65 @@
 
             <ImageView
                 android:id="@+id/pos_25"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_background_dark_blue"
+                android:padding="5dp"
+                android:src="@drawable/round_border_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/pos_26"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_background_dark_blue"
+                android:padding="5dp"
+                android:src="@drawable/round_border_button" />
+
+            <ImageView
+                android:id="@+id/pos_27"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_background_dark_blue"
+                android:padding="5dp"
+                android:src="@drawable/round_border_button" />
+
+            <ImageView
+                android:id="@+id/pos_28"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_background_dark_blue"
+                android:padding="5dp"
+                android:src="@drawable/round_border_button" />
+
+            <ImageView
+                android:id="@+id/pos_29"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_background_dark_blue"
+                android:padding="5dp"
+                android:src="@drawable/round_border_button" />
+
+            <ImageView
+                android:id="@+id/pos_30"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -585,6 +733,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

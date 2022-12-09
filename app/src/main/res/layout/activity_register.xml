@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_img2"
     tools:context=".activities.RegisterActivity">
+
 
     <TextView
         android:id="@+id/textView3"
@@ -13,9 +15,9 @@
         android:layout_marginTop="60dp"
         android:text="Inserisci le tue informazioni"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,17 +26,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="@dimen/default_margin"
-        android:background="@drawable/ic_round_border"
+        android:background="@drawable/round_border_button"
+        android:drawableLeft="@drawable/icon_person"
+        android:drawablePadding="@dimen/default_margin"
         android:hint="Username"
+        android:textColorHint="#333"
         android:minHeight="48dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -43,19 +47,42 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/default_margin"
-        android:background="@drawable/ic_round_border"
-        android:hint="Passsword"
+        android:background="@drawable/round_border_button"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawablePadding="@dimen/default_margin"
+        android:hint="Password"
+        android:textColorHint="#333"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingLeft="10dp"
-        android:paddingTop="0dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/repeatPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:background="@drawable/round_border_button"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawablePadding="@dimen/default_margin"
+        android:hint="Conferma Password"
+        android:inputType="textPassword"
+        android:textColorHint="#333"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signUp_btn"
@@ -63,11 +90,12 @@
         android:layout_height="53dp"
         android:layout_marginTop="64dp"
         android:background="@drawable/ic_btn_customize"
+        android:padding="10dp"
         android:text="@string/register_name"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/repeatPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_img2"
     tools:context=".activities.CreateGameActivity">
 
 
@@ -14,7 +15,7 @@
         android:layout_marginTop="48dp"
         android:gravity=""
         android:text="@string/create_game_text"
-        android:textColor="@color/darkGray"
+        android:textColor="@color/white"
         android:textSize="@dimen/size_text_default"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Numero giocatori presenti"
             android:textSize="@dimen/size_text_default"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ll_numPlayer" />
@@ -54,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="1"
                 android:onClick="checkButtonNumPlayer"
+                android:textColor="@color/white"
                 android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,26 +68,13 @@
                 android:layout_height="wrap_content"
                 android:text="2"
                 android:onClick="checkButtonNumPlayer"
+                android:textColor="@color/white"
                 android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rb_player1" />
 
-            <RadioButton
-                android:id="@+id/rb_player3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:onClick="checkButtonNumPlayer"
-                android:checked="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_player2" />
-
-
         </RadioGroup>
-
-
 
     </LinearLayout>
 
@@ -105,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Numero cartelle ai giocatori"
+            android:textColor="@color/white"
             android:textSize="@dimen/size_text_default"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,6 +112,7 @@
                 android:layout_height="wrap_content"
                 android:text="1"
                 android:onClick="checkButtonNumCard"
+                android:textColor="@color/white"
                 android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -132,21 +124,11 @@
                 android:layout_height="wrap_content"
                 android:text="2"
                 android:onClick="checkButtonNumCard"
+                android:textColor="@color/white"
                 android:checked="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rb_card1" />
-
-            <RadioButton
-                android:id="@+id/rb_card3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:onClick="checkButtonNumCard"
-                android:checked="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rb_card2" />
 
         </RadioGroup>
 

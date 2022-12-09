@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_img2"
     tools:context=".activities.HomeActivity">
 
     <TextView
@@ -14,6 +14,8 @@
         android:layout_marginTop="112dp"
         android:text="@string/tv_home"
         android:textSize="@dimen/size_text_home"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,11 +23,15 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Login"
         android:background="@drawable/ic_btn_customize"
+        android:drawableLeft="@drawable/icon_online_game"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:text="@string/game_online"
+        android:textSize="@dimen/size_text_default"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -35,20 +41,37 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_host"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Accedi come Host "
         android:background="@drawable/ic_btn_customize"
+        android:drawableLeft="@drawable/icon_offline_game"
+        android:paddingLeft="10dp"
+        android:text="@string/game_offline"
         android:textColor="@color/white"
-        android:layout_marginStart="@dimen/default_margin_btn"
-        android:layout_marginEnd="@dimen/default_margin_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_text_default"
+        android:layout_marginTop="@dimen/default_margin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintVertical_bias="0.163"
-        tools:ignore="MissingConstraints" />
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="showPopupRules"
+        android:id="@+id/btn_rules"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btn_customize"
+        android:drawableLeft="@drawable/icon_rules_game"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_text_default"
+        android:paddingLeft="10dp"
+        android:text="@string/rules"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_host" />
 
     <ImageView
         android:id="@+id/imageView"

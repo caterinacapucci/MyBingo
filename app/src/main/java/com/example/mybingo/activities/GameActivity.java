@@ -14,8 +14,8 @@ import com.example.mybingo.R;
 
 public class GameActivity extends AppCompatActivity {
 
-    private AppCompatButton createGameBtn, closeRulesBtn, exitGame;
-    private Dialog rulesDialog;
+    private AppCompatButton createGameBtn, closeRulesBtn, exitGame, yesBtn, noBtn;
+    private Dialog rulesDialog, exitGameDialog;
     private ScrollView scrollView;
 
     @Override
@@ -24,39 +24,21 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         rulesDialog = new Dialog(this);
+        exitGameDialog = new Dialog(this);
         this.scrollView = (ScrollView) this.findViewById(R.id.scrollView);
         createGameBtn = findViewById(R.id.btn_createGame);
 
 
         createGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                createGame();
+                Intent toGame = new Intent(GameActivity.this, CreateGameActivity.class);
+                startActivity(toGame);
 
             }
         });
 
-        exitGame = findViewById(R.id.btn_LOGOUTGame);
-        exitGame.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                toExit();
-            }
-        });
-
-
 
     }
-
-    //metodo per creare partita
-    public void createGame() {
-        Intent toGame = new Intent(this, CreateGameActivity.class);
-        startActivity(toGame);
-    }
-
-    //metodo per uscire dal gioco
-    public void toExit() {
-        onDestroy();
-    }
-
     //Method dialog rules
     public void showPopupRules(View view){
         rulesDialog.setContentView(R.layout.rules_pop_up);
@@ -65,10 +47,32 @@ public class GameActivity extends AppCompatActivity {
         closeRulesBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
                 rulesDialog.dismiss();
             }
         });
         rulesDialog.show();
     }
+
+    //Exit Game Method
+    public void showPopupExitGame(View view) {
+        exitGameDialog.setContentView(R.layout.exit_game_pop_up);
+        yesBtn = (AppCompatButton) exitGameDialog.findViewById(R.id.btn_yes);
+        noBtn = (AppCompatButton) exitGameDialog.findViewById(R.id.btn_no);
+        yesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GameActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        noBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exitGameDialog.dismiss();
+            }
+        });
+        exitGameDialog.show();
+    }
+
 }
