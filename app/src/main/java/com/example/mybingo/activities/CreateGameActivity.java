@@ -11,15 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.mybingo.R;
-import com.example.mybingo.models.CreateGameModel;
 
 public class CreateGameActivity extends AppCompatActivity {
 
     private AppCompatButton startGameBtn;
     private RadioGroup rgPlayer;
     private RadioGroup rgCard;
-
-
+    public RadioButton selectNumPlayer;
+    public RadioButton selectNumCard;
+    public int radioIdCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +37,11 @@ public class CreateGameActivity extends AppCompatActivity {
         rgCard = findViewById(R.id.rgb_num_card);
         startGameBtn = findViewById(R.id.btn_startGame);
 
-
         startGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent intentLogin = new Intent(CreateGameActivity.this, StartGameActivity.class);
-                startActivity(intentLogin);
+                selectedCard();
+
             }
         });
 
@@ -51,13 +50,33 @@ public class CreateGameActivity extends AppCompatActivity {
     public void checkButtonNumPlayer(View view){
 
         int radioIdPlayer = rgPlayer.getCheckedRadioButtonId();
-        RadioButton selectNumPlayer = (RadioButton) findViewById(radioIdPlayer);
+        selectNumPlayer = (RadioButton) findViewById(radioIdPlayer);
         Toast.makeText(this, "Hai selezionato "+selectNumPlayer.getText()+" giocatori", Toast.LENGTH_SHORT).show();
     }
     public void checkButtonNumCard(View view){
 
-        int radioIdCard = rgCard.getCheckedRadioButtonId();
-        RadioButton selectNumCard = (RadioButton) findViewById(radioIdCard);
+        radioIdCard = rgCard.getCheckedRadioButtonId();
+        selectNumCard = (RadioButton) findViewById(radioIdCard);
         Toast.makeText(this, "Hai selezionato "+selectNumCard.getText()+" cartelle", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void selectedCard () {
+        if (selectNumCard.getText().equals("2")) {
+            startGameTwo();
+        }
+        else {
+            startGame();
+        }
+    }
+
+    public void startGameTwo () {
+        Intent intentGame = new Intent(CreateGameActivity.this, StartGameTwoCardActivity.class);
+        startActivity(intentGame);
+    }
+
+    public void startGame () {
+        Intent intentGame = new Intent(CreateGameActivity.this, StartGameActivity.class);
+        startActivity(intentGame);
     }
 }

@@ -48,7 +48,7 @@
 
     <LinearLayout
         android:id="@+id/ll_ultimi_usciti"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
         android:layout_marginEnd="@dimen/default_margin"
@@ -149,14 +149,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="378dp"
-        android:layout_height="377dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="50dp"
         android:background="@color/darkGreen"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_ultimi_usciti">
@@ -411,178 +410,30 @@
                 android:src="@drawable/round_border_button" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/line_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="5">
+    </LinearLayout>
 
-            <ImageView
-                android:id="@+id/pos_16"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_text_default"
+        android:layout_marginEnd="@dimen/size_text_default"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-            <ImageView
-                android:id="@+id/pos_17"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_bingo"
+            android:layout_width="214dp"
+            android:layout_height="53dp"
+            android:background="@drawable/ic_btn_customize_terno"
+            android:text="TERNO"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/pos_18"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_19"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_20"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/line_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="5">
-
-            <ImageView
-                android:id="@+id/pos_21"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_22"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_23"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_24"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-
-            <ImageView
-                android:id="@+id/pos_25"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="@drawable/round_background_dark_blue"
-                android:padding="5dp"
-                android:src="@drawable/round_border_button" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/size_text_default"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="@dimen/size_text_default"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_terno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_yellow"
-                android:text="Terno"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_cinquina"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_blue"
-                android:text="cinquina"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1">
-
-            </Space>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_bingo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_green"
-                android:text="bingo"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-        </LinearLayout>
 
     </LinearLayout>
 

@@ -19,6 +19,8 @@ public class LoginActivity extends AppCompatActivity {
     public EditText usernameTxt;
     public EditText passwordTxt;
 
+    public static String usernameString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +40,11 @@ public class LoginActivity extends AppCompatActivity {
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                loginPage();
-            }
 
+                loginPage();
+                usernameString = usernameTxt.getText().toString();
+
+            }
         });
 
 

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyBingo"
         tools:targetApi="31">
         <activity
-            android:name=".activities.SatrtGameTwoCardActivity"
+            android:name=".activities.StartGameTwoCardActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".activities.CreateGameActivity"
-            android:label="Create Game"
+            android:label="Crea una partita"
             android:exported="false"
             android:parentActivityName=".activities.GameActivity">
             <meta-data

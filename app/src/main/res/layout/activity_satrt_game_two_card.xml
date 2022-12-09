@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_img2"
-    tools:context=".activities.SatrtGameTwoCardActivity">
+    tools:context=".activities.StartGameTwoCardActivity">
 
     <LinearLayout
         android:id="@+id/textView3"
@@ -690,46 +690,16 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_terno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_yellow"
-                android:text="Terno"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"></Space>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_cinquina"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_blue"
-                android:text="cinquina"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1">
-
-            </Space>
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_bingo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_btn_customize_green"
-                android:text="bingo"
+                android:background="@drawable/ic_btn_customize_terno"
+                android:text="TERNO"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />
+
+
         </LinearLayout>
 
     </LinearLayout>

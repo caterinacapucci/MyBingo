@@ -4,8 +4,8 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -18,6 +18,8 @@ public class GameActivity extends AppCompatActivity {
     private Dialog rulesDialog, exitGameDialog;
     private ScrollView scrollView;
 
+    public TextView username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,7 @@ public class GameActivity extends AppCompatActivity {
         exitGameDialog = new Dialog(this);
         this.scrollView = (ScrollView) this.findViewById(R.id.scrollView);
         createGameBtn = findViewById(R.id.btn_createGame);
+        username = findViewById(R.id.textView);
 
 
         createGameBtn.setOnClickListener(new View.OnClickListener() {
@@ -34,9 +37,9 @@ public class GameActivity extends AppCompatActivity {
                 Intent toGame = new Intent(GameActivity.this, CreateGameActivity.class);
                 startActivity(toGame);
 
+                username.setText(LoginActivity.usernameString);
             }
         });
-
 
     }
     //Method dialog rules
