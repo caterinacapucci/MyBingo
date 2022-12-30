@@ -23,4 +23,8 @@
     <string name="str_rules3">Nel caso in cui tu abbia coperto tutti i numeri su due righe, devi dichiarare di aver fatto decina.
 
     Invece, se sono stati coperti tutti i numeri presenti nella cartella (o tabella), hai vinto la partita facendo BINGO</string>
+
+    <string name="finish">FINISH GAME</string>
+    <string name="finish_text">La partita è terminata.</string>
+
 </resources>
