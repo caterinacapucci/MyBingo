@@ -17,6 +17,14 @@ public class LeaderboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
 
+        try {
+            this.getActionBar().setDisplayHomeAsUpEnabled(true);
+            ;
+        }
+        // catch block to handle NullPointerException
+        catch (NullPointerException e) {
+        }
+
         // definisco un array di stringhe
         String[] nameGamer = new String[] { "Username", "Partite giocare", "Punti ottenuti" };
 

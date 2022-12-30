@@ -26,5 +26,7 @@
 
     <string name="finish">FINISH GAME</string>
     <string name="finish_text">La partita è terminata.</string>
+    <string name="join_game_title">JOIN GAME</string>
+    <string name="join_game_text">Attendi un istante per vedere le partite disponibili.</string>
 
 </resources>

@@ -14,7 +14,7 @@ import com.example.mybingo.R;
 
 public class GameActivity extends AppCompatActivity {
 
-    private AppCompatButton createGameBtn, closeRulesBtn, exitGame, yesBtn, noBtn;
+    private AppCompatButton createGameBtn, closeRulesBtn, exitGame, yesBtn, noBtn, leaderboardBtn, joinGamebtn;
     private Dialog rulesDialog, exitGameDialog;
     private ScrollView scrollView;
 
@@ -30,7 +30,8 @@ public class GameActivity extends AppCompatActivity {
         this.scrollView = (ScrollView) this.findViewById(R.id.scrollView);
         createGameBtn = findViewById(R.id.btn_createGame);
         username = findViewById(R.id.textView);
-
+        leaderboardBtn = findViewById(R.id.btn_rankingGame);
+        joinGamebtn = findViewById(R.id.btn_joinGame);
 
         createGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -38,6 +39,22 @@ public class GameActivity extends AppCompatActivity {
                 startActivity(toGame);
 
                 username.setText(LoginActivity.usernameString);
+            }
+        });
+
+        joinGamebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toJoin = new Intent(GameActivity.this, JoinGameActivity.class);
+                startActivity(toJoin);
+            }
+        });
+
+        leaderboardBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toLeaderBoard = new Intent(GameActivity.this, LeaderboardActivity.class);
+                startActivity(toLeaderBoard);
             }
         });
 

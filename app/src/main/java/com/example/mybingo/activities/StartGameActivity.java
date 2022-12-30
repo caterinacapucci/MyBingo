@@ -38,11 +38,9 @@ public class StartGameActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 if(bingo.getText().toString().trim().equals("TERNO")){
                     bingo.setText("CINQUINA");
                     bingo.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_btn_customize_cinquina));
-
                 } else if(bingo.getText().toString().trim().equals("CINQUINA")){
                     bingo.setText("DECINA");
                     bingo.setBackgroundDrawable(getResources().getDrawable(R.drawable.ic_btn_customize_decina));
@@ -64,6 +62,7 @@ public class StartGameActivity extends AppCompatActivity {
 
     }
 
+    //Random Number
     //Finish game method
     public void showPopupFinishGame(View view) {
         finishGameDialog.setContentView(R.layout.finish_game_pop_up);

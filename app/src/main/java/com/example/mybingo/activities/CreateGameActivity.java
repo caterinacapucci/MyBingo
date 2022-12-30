@@ -15,10 +15,8 @@ import com.example.mybingo.R;
 public class CreateGameActivity extends AppCompatActivity {
 
     private AppCompatButton startGameBtn;
-    private RadioGroup rgPlayer;
-    private RadioGroup rgCard;
-    public RadioButton selectNumPlayer;
-    public RadioButton selectNumCard;
+    private RadioGroup rgPlayer, rgCard;
+    public RadioButton selectNumPlayer, selectNumCard;
     public int radioIdCard;
 
     @Override
